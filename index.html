@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Book Club</title>
+</head>
+<body>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <button id="connect">Connect to Wallet</button>
+    <h1>Virtual Book Club</h1>
+
+    <div>
+        <h2>Add Book</h2>
+        <input type="text" id="bookTitle" placeholder="Book Title">
+        <input type="text" id="bookAuthor" placeholder="Book Author">
+        <button id="addBookButton" onclick="addBook()">Add Book</button>
+    </div>
+
+    <div>
+        <h2>Borrow Book</h2>
+        <input type="number" id="borrowBookId" placeholder="Book ID">
+        <button id="borrowBookButton" onclick="borrowBook()">Borrow Book</button>
+        <p id="borrowBookResult"></p>
+    </div>
+
+    <div>
+        <h2>Return Book</h2>
+        <input type="number" id="returnBookId" placeholder="Book ID">
+        <button id="returnBookButton" onclick="returnBook()">Return Book</button>
+        <p id="returnBookResult"></p>
+    </div>
+
+    <div>
+        <h2>Check Book Availability</h2>
+        <input type="number" id="checkBookId" placeholder="Book ID">
+        <button id="checkBookButton" onclick="checkAvailability()">Check Availability</button>
+        <p id="checkAvailabilityResult"></p>
+    </div>
+
+    <div>
+        <h2>Get Book Details</h2>
+        <input type="number" id="detailsBookId" placeholder="Book ID">
+        <button id="getDetailsButton" onclick="getBookDetails()">Get Details</button>
+        <p id="bookDetailsResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
