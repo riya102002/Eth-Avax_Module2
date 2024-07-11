@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f6ecf9de; /* Light purple background */
     margin: 0;
     padding: 0;
     display: flex;
@@ -14,14 +14,30 @@ body {
 .header {
     width: 100%;
     padding: 20px;
-    background-color: #2c3e50;
+    background-color: #9575cd; /* Lavender header background */
     color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-color: transparent; /* Transparent background */
+    margin-left: 20px; /* Add left padding for the logo */
+    border-radius: 15px;
 }
 
 h1 {
     margin: 0;
     font-size: 2em;
+}
+
+#connect {
+    margin-top: 10px; /* Add margin to create space between heading and button */
+    margin-right: 20px; /* Add right padding for the button */
 }
 
 .container {
@@ -44,11 +60,11 @@ h1 {
 }
 
 h2 {
-    color: #2c3e50;
+    color: #673ab7; /* Dark purple heading color */
 }
 
 button {
-    background-color: #3498db;
+    background-color: #7e57c2; /* Lavender button color */
     border: none;
     color: white;
     padding: 10px 20px;
@@ -63,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #5e35b1; /* Darker lavender on hover */
 }
 
 input[type="text"], input[type="number"] {
@@ -77,12 +93,4 @@ input[type="text"], input[type="number"] {
 p {
     font-size: 14px;
     color: #555;
-}
-
-#connect {
-    background-color: #2ecc71;
-}
-
-#connect:hover {
-    background-color: #27ae60;
 }
