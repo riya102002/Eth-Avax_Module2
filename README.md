@@ -13,8 +13,7 @@ This project implements a virtual book club using Ethereum smart contracts. It a
 
 1. Clone the repository:
 
-  git clone https://github.com/your-repo/virtual-book-club.git
-  cd virtual-book-club
+  git clone https://github.com/riya102002/Eth-Avax_Module2.git
 
 2. Install Dependencies :
 npm install
