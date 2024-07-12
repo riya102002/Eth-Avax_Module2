@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Book Club</title>
+    <title>Book Club</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
-    
+
     <div class="header">
         <img src="book_logo.png" alt="Book Logo" class="logo">
         <h1>Book Club</h1>
@@ -22,28 +22,24 @@
             <input type="text" id="bookAuthor" placeholder="Book Author">
             <button id="addBookButton" onclick="addBook()">Add Book</button>
         </div>
-
         <div class="card">
             <h2>Borrow Book</h2>
             <input type="number" id="borrowBookId" placeholder="Book ID">
             <button id="borrowBookButton" onclick="borrowBook()">Borrow Book</button>
             <p id="borrowBookResult"></p>
         </div>
-
         <div class="card">
             <h2>Return Book</h2>
             <input type="number" id="returnBookId" placeholder="Book ID">
             <button id="returnBookButton" onclick="returnBook()">Return Book</button>
             <p id="returnBookResult"></p>
         </div>
-
         <div class="card">
             <h2>Check Book Availability</h2>
             <input type="number" id="checkBookId" placeholder="Book ID">
             <button id="checkBookButton" onclick="checkAvailability()">Check Availability</button>
             <p id="checkAvailabilityResult"></p>
         </div>
-
         <div class="card">
             <h2>Get Book Details</h2>
             <input type="number" id="detailsBookId" placeholder="Book ID">
@@ -51,7 +47,6 @@
             <p id="bookDetailsResult"></p>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
